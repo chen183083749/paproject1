@@ -1,0 +1,218 @@
+/* miniprogram/pages/home_center/common_panel/index.js.wxss */
+
+.common-panel-backgroud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+	height: 320px;
+	background-color: #b400b4;
+}
+
+.common-panel-header {
+  z-index: 1;
+  width: 100%;
+  height: 256px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.common-panel-header-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.common-panel-header-dpName {
+	width: 160px;
+  height: 25px;
+  text-align: center;
+	font-family: HelveticaNeue;
+	font-size: 12px;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+	color: #fff;
+}
+
+.common-panel-header-dpValue {
+	width: 150px;
+	height: 150px;
+  font-family: DINCondensed-Bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  line-height:150px;
+	font-size: 50px;
+  color: rgba(136, 0, 0, 0.822);
+  background-color: rgba(252, 130, 30, 0.76);
+  border-radius: 50%;
+}
+
+
+.roDpItem-normal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 54px;
+  padding: 16px 2px;
+}
+
+.roDpItem-normal:not(:last-child) {
+  border-right: solid 1px #d6d6d6;
+}
+
+.roDpItem-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 54px;
+  padding: 16px 33px;
+}
+
+.roDpItem-two:not(:last-child) {
+  border-right: solid 1px #d6d6d6;
+}
+
+.roDpItem-one {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 64px;
+  padding: 20px 24px;
+  background-color: #fff;
+  border-radius: 14px;
+}
+
+.roDpItem-dpName {
+  flex: 1;
+  width: 115px;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  line-height: 24px;
+  color: rgba(80, 80, 80, 0.5);
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.roDpItem-status {
+  width: 115px;
+  text-align: center;
+  font-family: PingFangSC-Semibold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #505050;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.statuslist {
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+  line-height: 12px;
+  flex-wrap: wrap;
+}
+
+.scroll-view:f {
+  padding: 16px 8px;
+  width: auto;
+  height: 100%;
+  /* color: rgb(255, 255, 255);
+  background-color: rgba(252, 130, 30, 0.76);
+  border-radius: 50% / 50%; */
+}
+.hide{
+  display: none;
+ }
+.show{ 
+  display: block;
+ }
+
+.hhide:focus{ 
+  background-color: rgb(6, 194, 0);
+ }
+
+ .wendu{
+   height: 100px;
+   width: 100%;
+   border: 10px auto 10px;
+   background-color: #ccc;
+   z-index: 999;
+ }
+
+ .bg_fff {
+  background-color: #fff;
+}
+.xui-wrapper {
+  margin:0 auto;
+  width:100%;
+  max-width:750px;
+  /*height:100vh;*/
+  background-color:#efeff4;
+}
+.xui-myPromption-wrapper .xui-returnCommission .xui-process {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 28px 0 12px;
+  width: 76%;
+}
+.xui-myPromption-wrapper .xui-process .xui-icon-flag {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 12px;
+  height: 18px;
+  background-size: 11px;
+}
+.xui-myPromption-wrapper .xui-process .xui-process-static {
+  width: 100%;
+  height: 15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 198, 255,.6);
+  box-shadow: 0 0 5px rgba(0, 198, 255,.6);
+  background-color: rgba(0, 198, 255,.6);
+}
+.xui-myPromption-wrapper .xui-process .xui-process-active {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 0;
+  height: 14px;
+  border: 1px solid #4dafe2;
+  border-radius: 10px;
+  background-image: linear-gradient(60deg, transparent 0rem, transparent 0.8rem, #4dafe2 0.8rem, #4dafe2 1.6rem, transparent 1.6rem, transparent 2.4rem, #4dafe2 2.4rem);
+  background-color: #008cd5;
+  background-size: 20px 38px;
+  box-shadow: 1px 1px 5px rgba(0, 140, 213, .8);
+  -webkit-animation: process 800ms infinite linear;
+  animation: process 800ms infinite linear;
+}
+.xui-myPromption-wrapper .xui-process .xui-process-active:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom,rgba(0, 140, 213, .6), rgba(0, 140, 213, .6) 15%, transparent 60%, rgba(0, 140, 213, .6));
+}
+
+/* 动画 */
+@-webkit-keyframes process {
+  0% { background-position: 0 0; }
+  100% { background-position: 20px 0; }
+}
+@keyframes process {
+  0% { background-position: 0 0; }
+  100% { background-position: 20px 0; }
+}
